@@ -1,0 +1,408 @@
+body, ul, li, h1, h2, a, img, h3, span
+{
+    margin: 0;
+    padding: 0;
+    font-family: Gill Sans;
+}
+body
+{
+    margin-bottom: 80px;
+}
+nav
+{
+    background-color: #a9cc99;
+    padding: 20px;
+}
+nav ul
+{
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+nav li
+{
+    width: 33%;
+    display: inline-block;
+
+}
+nav li a
+{
+    font-size: 1.8em;
+    text-decoration: none;
+    color: #424141;
+}
+nav li a span
+{
+    border: 0.1em solid;
+    border-color: #4B4B4B;
+    padding: 8px 10px;
+    display: inline-block;
+    border-radius: 40px;
+}
+nav li img
+{
+    width: .8em;
+}
+nav li a span:hover
+{
+    border-color:blue;
+    position: relative;
+    top: -4px;
+}
+header
+{
+    padding: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 1.99em;
+}
+h1#descriptor
+{
+    font-size: 1.7em;
+    display: inline-block;
+}
+header div
+{
+    display: flex;
+    flex-direction: column;
+}
+.hiddenPhotos
+{
+    display: none;
+}
+header img
+{
+    width: 6.8em;
+    display: flex;
+    margin-top: 1.3em;
+    margin-right: auto; 
+    margin-left: auto;
+    box-shadow: 0.18em 0.18em 0.12em #c3c3c3;
+}
+.biggerPhoto
+{
+    width: 5.3em;
+}
+header .leftSide
+{
+    float: left;
+}
+header .rightSide
+{
+    float: right;
+}
+header p
+{
+    margin-inline-start: 8.7em;
+    margin-inline-end: 8.7em;
+    padding: 0.4em;
+    border: 0.2em dashed;
+    border-color: #86e851;
+    border-radius: 1.2em;
+}
+footer
+{
+    margin-top: 0.2em;
+    background-color: #a9cc99;
+    padding: 20px;
+    padding-top: 10px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+footer address
+{
+    display: inline-block;
+    font-size: 1em;
+    text-decoration: none;
+    font-style: normal;
+}
+footer li a
+{
+    text-decoration: none;
+    color: #4B4B4B;
+}
+footer li :hover
+{
+    text-decoration: underline;
+    color: blue; 
+}
+footer li a[href^="mailto:"]:after 
+{
+    content: " \2709";
+    margin-right: 10px;
+}
+
+article span
+{
+    min-width: 200px;
+    width: 25%;
+    margin: 1.9em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 0.35em dotted rgb(78, 218, 236);
+}
+article .date
+{
+    margin-top: 0em;
+    font-size: 0.9em;
+}
+article img
+{
+    width: clamp(125px, 65%, 200px);
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.3em;
+}
+article h3
+{
+    text-align: center;
+    margin: 0.5em;
+    text-decoration: underline;
+    font-size: 1.8em;
+}
+article p
+{
+    font-size: 0.99em;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 1300px)
+{
+
+    header p
+    {
+        margin-inline-start: 8.7em;
+        margin-inline-end: 8.7em;
+        padding: 0.4em;
+        font-size: 0.9em;
+    }
+    
+}
+
+@media screen and (max-width: 1210px)
+{
+
+    header img
+    {
+        width: 5.8em;
+    }
+    .biggerPhoto
+    {
+        background-color: aqua;
+        width: 4.2em;
+    }
+    header p
+    {
+        margin-inline-start: 7.7em;
+        margin-inline-end: 7.7em;
+        font-size: 0.8em;
+    } 
+}
+
+@media screen and (max-width: 955px){
+
+    header img
+    {
+        width: 4.8em;
+    }
+    header p
+    {
+        margin-inline-start: 7em;
+        margin-inline-end: 7em;
+        font-size: 0.8em;
+    }   
+}
+
+@media screen and (max-width: 915px)
+{
+
+    .rightSide, .leftSide
+    {
+        display: none;
+    }
+    .hiddenPhotos
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .hiddenPhotos ul
+    {
+        text-align: center;
+        white-space: nowrap;
+        margin: 0 auto;
+    }
+    .hiddenPhotos li
+    {
+        margin-top: 0em;
+        width: 25%;
+        display: inline-block;
+        margin-left: 0.15em;
+
+    }
+    .hiddenPhotos li img
+    {
+        margin-top: 0.4em;
+        margin-left: 0.9em;
+    }
+    .changeThis
+    {
+        width: 2.7em;
+        margin-left: 0px;
+    }
+    .changeThis2
+    {
+        width: 3.5em;
+    }
+    header p
+    {
+        margin-inline-start: 1em;
+        margin-inline-end: 1em;
+        font-size: 0.7em;
+        margin-bottom: 0.4em;
+    }   
+}
+@media screen and (max-width: 800px){
+    article h3
+    {
+        font-size: 1.7em;
+    }
+    img.changeThis
+    {
+        margin: auto;
+    }
+    li.bottomImage
+    {
+        width: 23%;
+    }
+}
+@media screen and (max-width: 730px){
+    header h1#descriptor
+    {
+        font-size: 1.2em;
+    }
+    header p
+    {
+        font-size: 0.6em;
+        margin-bottom: 0.4em;
+    }
+    .hiddenPhotos li
+    {
+        margin-top: 0em;
+        width: 33.333%;
+        display: inline-block;
+        margin-left: 0.15em;
+
+    }
+    .hiddenPhotos .bottomImage
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    article span
+    {
+        min-width: 200px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .hiddenPhotos ul li:nth-child(3)
+    {
+        display: none;
+    }
+    .hiddenPhotos li
+    {
+        margin-top: 0em;
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+    }
+    nav li a
+    {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 500px){
+
+    .hiddenPhotos ul li:nth-child(3)
+    {
+        display: none;
+    }
+    .hiddenPhotos li
+    {
+        margin-top: 0em;
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+    }
+    nav li a
+    {
+        font-size: 1.2em;
+    }
+    header img
+    {
+        width: 4.2em;
+    }
+}
+@media screen and (max-width: 460px){
+
+    header h1#descriptor
+    {
+        font-size: 0.9em;
+    }
+    header p
+    {
+        font-size: 0.57em;
+    }
+}
+@media screen and (max-width: 400px){
+    header p
+    {
+        border: 0em;
+        padding: 0em;
+        margin: 0em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+    }
+}
+@media screen and (max-width: 380px){
+    .hiddenPhotos li
+    {
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+    } 
+}
+@media screen and (max-width: 360px){
+    header p
+    {
+        font-size: 0.52em;
+    }
+    nav li a
+    {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 350px){
+    footer h2
+    {
+        font-size: 1.2em;
+    }
+    footer address
+    {
+        font-size: 0.9em;
+    }
+    header ul li:nth-child(1)
+    {
+        margin-left: auto;
+    }
+}
