@@ -54,7 +54,7 @@ header
     padding: 20px;
     padding-bottom: 0px;
     text-align: center;
-    font-size: 1.99em;
+    font-size: 1.80em;
 }
 h1#descriptor
 {
@@ -361,7 +361,7 @@ article p
     }
     header p
     {
-        font-size: 0.57em;
+        font-size: 0.65em;
     }
 }
 @media screen and (max-width: 400px){
@@ -380,13 +380,24 @@ article p
         margin: auto;
         display: inline-block;
         text-align: center;
-    } 
-}
-@media screen and (max-width: 360px){
+    }
     header p
     {
-        font-size: 0.52em;
+        font-size: 0.50em;
     }
+    #info-links
+    {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+    footer
+    {
+        font-size: 0.7em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 360px){
     nav li a
     {
         font-size: 1em;
