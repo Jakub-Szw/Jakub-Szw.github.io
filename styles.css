@@ -3,27 +3,31 @@ body, ul, li, h1, h2, a, img, h3, span
     margin: 0;
     padding: 0;
     font-family: Gill Sans;
+    box-sizing: border-box;
 }
-body
-{
-    margin-bottom: 80px;
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
 }
 nav
 {
     background-color: #a9cc99;
     padding: 20px;
 }
-nav ul
-{
-    text-align: center;
-    white-space: nowrap;
-    margin: 0 auto;
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
 }
-nav li
-{
-    width: 33%;
-    display: inline-block;
-
+nav li {
+    width: auto;
 }
 nav li a
 {
@@ -73,11 +77,18 @@ header div
 header img
 {
     width: 6.8em;
-    display: flex;
+    display: block;
     margin-top: 1.3em;
     margin-right: auto; 
     margin-left: auto;
-    box-shadow: 0.18em 0.18em 0.12em #c3c3c3;
+    border: 2px solid black;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+header img:hover {
+    rotate: 0deg !important;
+    scale: 1.05;
+    z-index: 10;
 }
 .biggerPhoto
 {
@@ -102,13 +113,12 @@ header p
 }
 footer
 {
-    margin-top: 0.2em;
+    margin-top: auto;
     background-color: #a9cc99;
     padding: 20px;
-    padding-top: 10px;
-    bottom: 0;
-    position: fixed;
+    position: relative;
     width: 100%;
+    padding-top: 10px;
 }
 footer address
 {

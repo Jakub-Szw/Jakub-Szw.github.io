@@ -13,33 +13,28 @@
             <li><a href = "/main_resume.pdf"><span>Resume</span></a></li>
         </ul>
     </nav>
-    <article style = "display: flex; justify-content: center; flex-direction: row; flex-wrap: wrap;">
-        <span style="float: left;">
-            <h3>SparkHacks</h3>
-            <p class = "date" style = "text-decoration: underline;">Friday, February 7th, 2025</p>
-            <img src = "images/SparckHacks 2.JPG">
-            <p>My friends and I joined a hackathon hosted by the University of Illinois Chicago students. Our team of five built a bidding website with the 
-                theme of helping small businesses. Users would post jobs with a budget, and companies would bid to win the job. I had a lot of fun, and I 
-                gained a lot of team experience.
-            </p>
-        </span>
-        <span style="float: left;">
-            <h3>Upcoming</h3>
-            <p class = "date" style = "text-decoration: underline;">July 2nd, 2025 - August 22nd, 2025</p>
-            <img src = "images/IT_Internship.jpg">
-            <p>Over the summer, I got the opportunity to work with the IT Department for the College of Engineering at the University of Illinois Chicago.
-                I gained a great amount of experience in providing support via TDX ticketing: triaged/resolved hardware & software issues, configured peripherals. 
-                As well as building and administrating VMs on Proxmox VM and automated OS imaging/deployment with FOG server standardize workstation rollouts.
-            </p>
-        </span>
-        <span>
-            <h3>Upcoming</h3>
-            <p class = "date" style = "text-decoration: underline;">Future</p>
-            <img src = "">
-            <p>I will continue to write about my experiences and opportunities that I encounter along the way.
-            </p>
-        </span>
-    </article>
+    <article id ="blog-container" style = "display: flex; justify-content: center; flex-direction: row; flex-wrap: wrap;">
+        </article>
+        <script>
+            fetch('./blogs-info.json')
+                .then(response => response.json())
+                .then(blogs => {
+                    const container = document.getElementById('blog-container');
+                    let blogsList = "";
+                    blogs.forEach(blog => {
+                        blogsList += `
+                        <span style="float: left;"> 
+                            <h3>${blog.title}</h3>
+                            <p class = "date" style = "text-decoration: underline;">${blog.date}</p>
+                            ${blog.image ? `<img src="${blog.image}">` : ''}
+                            <p>${blog.content}</p>
+                        </span>
+                        `;
+                    });
+                    container.innerHTML = blogsList;
+                })
+                .catch(err => console.error("Something broke :(, check JSON or the script", err));
+        </script>
     <footer>
         <h2>Contact Information</h2>
         <ul>
