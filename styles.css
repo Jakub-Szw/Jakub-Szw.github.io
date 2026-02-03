@@ -7,6 +7,7 @@ body, ul, li, h1, h2, a, img, h3, span
 }
 html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 body {
     display: flex;
@@ -17,7 +18,7 @@ body {
 }
 nav
 {
-    background-color: #a9cc99;
+    background-color: white;
     padding: 20px;
 }
 nav ul {
@@ -31,7 +32,7 @@ nav li {
 }
 nav li a
 {
-    font-size: 1.8em;
+    font-size: 1.2em;
     text-decoration: none;
     color: #424141;
 }
@@ -83,7 +84,6 @@ header img
     margin-left: auto;
     border: 2px solid black;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
 }
 header img:hover {
     rotate: 0deg !important;
@@ -108,13 +108,13 @@ header p
     margin-inline-end: 8.7em;
     padding: 0.4em;
     border: 0.2em dashed;
-    border-color: #86e851;
+    border-color: #4B4B4B;
     border-radius: 1.2em;
 }
 footer
 {
     margin-top: auto;
-    background-color: #a9cc99;
+    background-color: white;
     padding: 20px;
     position: relative;
     width: 100%;
@@ -150,7 +150,7 @@ article span
     margin: 1.9em;
     padding-left: 1em;
     padding-right: 1em;
-    border: 0.35em dotted rgb(78, 218, 236);
+    border: 0.35em dotted #4B4B4B;
 }
 article .date
 {
@@ -338,7 +338,7 @@ article p
     }
     nav li a
     {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 @media screen and (max-width: 500px){
@@ -356,7 +356,7 @@ article p
     }
     nav li a
     {
-        font-size: 1.2em;
+        font-size: 0.8em;
     }
     header img
     {
@@ -410,7 +410,7 @@ article p
 @media screen and (max-width: 360px){
     nav li a
     {
-        font-size: 1em;
+        font-size: 0.7em;
     }
 }
 @media screen and (max-width: 350px){
