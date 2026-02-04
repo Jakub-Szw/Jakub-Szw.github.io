@@ -6,7 +6,7 @@
         "content": "My friends and I joined a hackathon hosted by the University of Illinois Chicago students. Our team of five built a bidding website with the theme of helping small businesses. Users would post jobs with a budget, and companies would bid to win the job. I had a lot of fun, and I gained a lot of team experience."
     },
     { 
-        "title": "IT Internship|Summer 2025",
+        "title": "IT Internship | Summer 2025",
         "date":  "July 2nd, 2025 - August 22nd, 2025",
         "image": "images/IT_Internship.jpg",
         "content": "Over the summer, I got the opportunity to work with the IT Department for the College of Engineering at the University of Illinois Chicago. I gained a great amount of experience in providing support via TDX ticketing: triaged/resolved hardware & software issues, configured peripherals. As well as building and administrating VMs on Proxmox VM and automated OS imaging/deployment with FOG server standardize workstation rollouts."
